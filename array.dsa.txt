@@ -1,0 +1,10 @@
+(declare an arry)
+#include<stdio.h>
+int main()
+{
+inti=0;
+int marks[5]={20,30,50,60,80}; //declare and intilize of array.
+for(i=0; i<5; i++);
+{
+printf("%d\n",marks[i];
+}
