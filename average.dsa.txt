@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int arr[10]= {2,4,6,8,9,10,50,90.70,60};
+int sum=0;
+int average;
+int i;
+for(i=0; i<10; i++)
+{
+sum+= arr[i];
+}
+average= sum /10;
+printf("the average of given number :%d",average);
+return 0;
+}
