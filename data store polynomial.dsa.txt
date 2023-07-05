@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct polynomial {
+  int coefficient, exponent;
+};
+
+int main() {
+  int n;
+  struct polynomial poly[10];
+
+  printf("Enter the number of terms in the polynomial: ");
+  scanf("%d", &n);
+
+  for (int i = 0; i < n; i++) {
+    printf("Enter the coefficient and exponent of term %d: ", i + 1);
+    scanf("%d %d", &poly[i].coefficient, &poly[i].exponent);
+  }
+
+  printf("The polynomial is: ");
+  for (int i = 0; i < n; i++) {
+    printf("%d*x^%d ", poly[i].coefficient, poly[i].exponent);
+  }
+
+  printf("\n");
+
+  return 0;
+}
